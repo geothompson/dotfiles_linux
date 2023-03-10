@@ -1,0 +1,30 @@
+#!/bin/bash
+
+ln -sf $PWD/lambda-term-inputrc ~/.lambda-term-inputrc
+ls -l ~/.lambda-term-inputrc
+
+ln -sf $PWD/bashrc ~/.bashrc
+ls -l ~/.bashrc
+
+#ln -sf $PWD/init.vim $HOME/.config/nvim/init.vim
+#ls -l $HOME/.config/nvim/init.vim
+
+
+ln -sf $PWD/vimrc $HOME/.vimrc
+ls -l $HOME/.vimrc
+
+ln -sf $PWD/tmux.conf $HOME/.tmux.conf
+ls -l $HOME/.tmux.conf
+
+ln -sf $PWD/bash_profile $HOME/.bash_profile
+ls -l $HOME/.bash_profile
+
+ln -sf $PWD/bash_aliases $HOME/.bash_aliases
+ls -l $HOME/.bash_aliases
+
+ln -sf $PWD/gdbinit ~/.gdbinit
+ls -l ~/.gdbinit
+
+ln -s $PWD/nvim ~/.config/
+ls -l ~/.gdbinit
+
