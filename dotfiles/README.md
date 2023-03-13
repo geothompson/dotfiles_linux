@@ -1,5 +1,0 @@
-# My Dotfiles
-
-Buyer Beware.
-
-
