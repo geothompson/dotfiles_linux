@@ -14,7 +14,7 @@ alias clear='echo ${clear}'
 #alias cds='. cds &>/dev/null'
 alias notes='. notes'
 alias rzi='rm -rf **/*Zone.Identifier'
-alias lynx='~/repos/gitlab.com/snapplesacue/dotfiles/scripts/lynx/lynx'
+alias vif='vi $(fzf)'
 
 
 alias lind='ssh thom7918@cse1-lind40-01.cselabs.umn.edu'

@@ -1,5 +1,4 @@
 " inspored by nvim kickstart and wrxrob
-
 call plug#begin(stdpath('config').'/plugged')
 
 Plug 'sirver/ultisnips'
@@ -37,7 +36,6 @@ Plug 'saadparwaiz1/cmp_luaSnip'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
-
 
 " Gui
 Plug 'vim-airline/vim-airline'
