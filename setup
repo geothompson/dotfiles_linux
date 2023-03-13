@@ -10,7 +10,7 @@ ls -l ~/.bashrc
 #ls -l $HOME/.config/nvim/init.vim
 
 
-ln -sf $PWD/vimrc $HOME/.vimrc
+ln -sf $PWD/nvim $HOME/.config/nvim
 ls -l $HOME/.vimrc
 
 ln -sf $PWD/tmux.conf $HOME/.tmux.conf
