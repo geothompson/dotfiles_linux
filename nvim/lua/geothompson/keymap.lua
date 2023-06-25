@@ -18,7 +18,7 @@ vim.keymap.set("n", "<leader>w", ":w!<cr>")
 vim.keymap.set("n", "<leader>d", "yyp")
 
 -- sources current file 
-vim.keymap.set("n", "<leader>sr", ":so<cr>")
+vim.keymap.set("n", "<leader>sr", ":so %<cr>")
 
 --move blocks of code highlighted in visual mode
 vim.keymap.set("v","J", ":m '>+1<cr>gv=gv")

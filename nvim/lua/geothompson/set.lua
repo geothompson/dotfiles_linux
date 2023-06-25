@@ -3,6 +3,7 @@ vim.opt.nu = true
  --relative line numbers
 vim.opt.relativenumber = true
 
+vim.api.nvim_set_option("clipboard","unnamed")vim.api.nvim_set_option("clipboard","unnamed")
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -33,6 +34,7 @@ vim.opt.termguicolors = true
 -- keeps cursor in middle of page
 vim.opt.scrolloff = 8
 
+vim.api.nvim_set_option("clipboard","unnamed")
 
 -- adds column for vim diagnostics/etc
 vim.opt.signcolumn = "yes"
@@ -41,17 +43,22 @@ vim.opt.isfname:append("@-@")
 
 -- improves preformance
 vim.opt.updatetime = 50
+vim.opt.timeoutlen = 1000
 vim.opt.lazyredraw  = true
 
 vim.opt.smartcase = true
-
+vim.opt.showmode = false
 
 -- adds visual column
 vim.opt.colorcolumn = "80"
-
 vim.opt.conceallevel= 1
 
+vim.cmd(":hi ColorColumn ctermbg=lightgrey guibg=grey")
 
+
+
+--for vimtex--
+vim.cmd("let g:leetcode_browser='chrome'")
 
 --for vimtex--
 vim.cmd("syntax enable")
