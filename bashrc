@@ -9,7 +9,7 @@ export txtblu='\e[0;34m' # Blue
 export txtpur='\e[0;35m' # Purple
 export txtcyn='\e[0;36m' # Cyan
 export txtwht='\e[0;37m' # White
- 
+
 export bldblk='\e[1;30m' # Black - Bold
 export bldred='\e[1;31m' # Red
 export bldgrn='\e[1;32m' # Green
@@ -50,7 +50,8 @@ export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
-
+# Set breakpoint() in Python to call pudb
+export PYTHONBREAKPOINT="pudb.set_trace"
 
  #turn vim mode on 
  
@@ -65,7 +66,7 @@ shopt -s dotglob
 export PATH=/usr/bin/lynx:$PATH
 export PATH=$HOME/.local/bin/:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH=$HOME/dotfiles_linux/dotfiles/scripts/:$PATH
+export PATH=$HOME/dotfiles_linux/scripts/:$PATH
 export PATH=$HOME/repos/github/ocornut/imgui/:$PATH
 export PATH=$HOME/gitlab/SnappleSauce/dotfiles/scripts/:$PATH
 export PATH=$HOME/repos/gitlab.com/snapplesacue/README/scripts/:$PATH

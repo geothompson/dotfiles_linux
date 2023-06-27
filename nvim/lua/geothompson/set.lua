@@ -1,3 +1,14 @@
+-- inline hints
+
+-- vim.api.nvim_create_autocmd({'insertEnter'},{
+--     callback = function () vim.lsp.buf.inlay_hint(0, true) end,
+--   })
+-- vim.api.nvim_create_autocmd({'insertLeave'},{
+--     callback = function () vim.lsp.buf.inlay_hint(0, false) end,
+--  })
+
+
+
  --line numbers
 vim.opt.nu = true
  --relative line numbers
@@ -61,8 +72,8 @@ vim.cmd(":hi ColorColumn ctermbg=lightgrey guibg=grey")
 vim.cmd("let g:leetcode_browser='chrome'")
 
 --for vimtex--
-vim.cmd("syntax enable")
-vim.cmd("let maplocalleader = ','")
-vim.cmd("let g:tex_flavor= 'latex'")
-vim.cmd("let g:vimtex_quickfix_mode= 0")
+-- vim.cmd("syntax enable")
+-- vim.cmd("let maplocalleader = ','")
+-- vim.cmd("let g:tex_flavor= 'latex'")
+-- vim.cmd("let g:vimtex_quickfix_mode= 0")
 

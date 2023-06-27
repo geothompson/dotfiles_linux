@@ -54,23 +54,37 @@ return require('packer').startup(function(use)
 --    end
 -- })
     use ("tjdevries/colorbuddy.nvim")
-    use 'tjdevries/colorbuddy.vim'
-    require('colorbuddy').setup()
-    require('colorbuddy').colorscheme('gruvbuddy')
+    use ('bbenzikry/snazzybuddy.nvim')
+    use "rafamadriz/neon"
+   -- require('colorbuddy').setup()
+
     use ('tjdevries/gruvbuddy.nvim')
     use ('nvim-treesitter/nvim-treesitter', {run =  ':ts_update'})
     use ('nvim-treesitter/playground')
     use ('theprimeagen/harpoon')
-    use "~/dev/plugins/test/game_of_life.nvim"
+    use "~/dev/plugins/game_of_life.nvim"
     use ('mbbill/undotree')
     use ('tpope/vim-fugitive')
     use ('tpope/vim-surround')
     use ('tpope/vim-sleuth')
     use ('navarasu/onedark.nvim')
     use ('folke/tokyonight.nvim')
+<<<<<<< HEAD
     use ('lervag/vimtex')
-    use ('vim-pandoc/vim-pandoc')
-    use ('vim-pandoc/vim-pandoc-syntax')
+=======
+    -- use ('lervag/vimtex')
+    use('farmergreg/vim-lastplace')
+    use ('mfussenegger/nvim-jdtls')
+    use({
+	    "L3MON4D3/LuaSnip",
+	    -- follow latest release.
+	    tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	    -- install jsregexp (optional!:).
+	    run = "make install_jsregexp"
+    })
+>>>>>>> bdc916a (starting to migrate to lazy.nvim)
+    -- use ('vim-pandoc/vim-pandoc')
+    -- use ('vim-pandoc/vim-pandoc-syntax')
 
 use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 

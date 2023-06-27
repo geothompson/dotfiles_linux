@@ -9,7 +9,6 @@ ls -l ~/.bashrc
 #ln -sf $PWD/init.vim $HOME/.config/nvim/init.vim
 #ls -l $HOME/.config/nvim/init.vim
 
-
 ln -sf $PWD/nvim $HOME/.config/nvim
 ls -l $HOME/.vimrc
 

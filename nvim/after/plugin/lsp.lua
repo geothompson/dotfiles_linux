@@ -5,6 +5,7 @@
   --suggest_lsp_servers = false,
 --})
 
+require("neodev").setup({})
 local lsp = require('lsp-zero')
 lsp.preset("recommended")
 
@@ -64,5 +65,5 @@ end)
 
 lsp.setup()
 vim.diagnostic.config({
-    virtual_text = false
+    virtual_text = true
 })

@@ -24,3 +24,14 @@ R = function(name)
   RELOAD(name)
   return require(name)
 end
+
+InlineOn = function()
+  vim.lsp.buf.inlay_hint(0, true)
+end
+
+InlineOff = function()
+  vim.lsp.buf.inlay_hint(0, false)
+end
+
+
+
