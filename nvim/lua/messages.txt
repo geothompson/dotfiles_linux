@@ -1,0 +1,5 @@
+
+
+Error detected while processing function netrw#Explore[216]..netrw#LocalBrowseCheck[26]..<SNR>59_NetrwBrowse[250]..<SNR>59_NetrwMaps:
+line  144:
+E225: global mapping already exists for 

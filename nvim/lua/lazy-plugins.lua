@@ -29,7 +29,10 @@ require('lazy').setup({
 
   require 'geothompson/plugins/lspconfig',
 
-  require 'geothompson/plugins/conform',
+  require 'geothompson/plugins/autopairs',
+
+
+  -- require 'geothompson/plugins/conform',
 
   require 'geothompson/plugins/cmp',
 
@@ -49,6 +52,9 @@ require('lazy').setup({
 
   require 'geothompson/plugins.melange-nvim',
 
+  require 'geothompson/plugins.trouble',
+
+  require("geothompson.plugins.fugitive"),
   {
     'folke/neodev.nvim',
     opts = {},
