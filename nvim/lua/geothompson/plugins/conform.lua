@@ -8,7 +8,7 @@ return {
         lsp_fallback = true,
       },
       formatters_by_ft = {
-        lua = { 'stylua' },
+        -- lua = { 'stylua' },
         cpp = { 'clang_format' },
         c = { 'clang_format' },
 

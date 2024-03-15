@@ -4,6 +4,7 @@ return {
     event = 'InsertEnter',
     dependencies = {
       -- Snippet Engine & its associated nvim-cmp source
+      --
       {
         'L3MON4D3/LuaSnip',
         build = (function()
@@ -18,7 +19,6 @@ return {
         config = function()
           local ls = require 'luasnip'
           local types = require 'luasnip.util.types'
-
           ls.config.set_config {
             history = false,
             updateevents = 'TextChanged,TextChangedI',
@@ -40,6 +40,8 @@ return {
       --  into multiple repos for maintenance purposes.
       'hrsh7th/cmp-nvim-lsp',
       'hrsh7th/cmp-path',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-cmdline',
 
       -- If you want to add a bunch of pre-configured snippets,
       --    you can use this plugin to help you. It even has snippets
@@ -60,6 +62,8 @@ return {
             luasnip.lsp_expand(args.body)
           end,
         },
+
+
         completion = { completeopt = 'menu,menuone,noinsert' },
 
         -- For an understanding of why these mappings were
@@ -105,8 +109,23 @@ return {
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
           { name = 'path' },
+          { name = 'buffer' },
         },
       }
+      -- `:` cmdline setup.
+      cmp.setup.cmdline(':', {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({
+          { name = 'path' }
+        }, {
+          {
+            name = 'cmdline',
+            option = {
+              ignore_cmds = { 'Man', '!' }
+            }
+          }
+        })
+      })
     end,
   },
 }

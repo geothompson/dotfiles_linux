@@ -5,10 +5,10 @@ vim.g.netrw_banner = 0
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 --  For more options, you can see `:help option-list`
-
 vim.opt.relativenumber = true
 vim.opt.nu = true
 
+vim.opt.guicursor= "i-n:block"
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 

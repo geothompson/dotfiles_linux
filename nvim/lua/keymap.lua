@@ -11,6 +11,9 @@ vim.keymap.set('n', '<leader>fs', ':Ex<cr>')
 -- quick save
 vim.keymap.set('n', '<leader>w', ':w!<cr>')
 
+--  close buffer
+vim.keymap.set('n', '<leader><leader>e', ':bd<cr>')
+
 -- quick duplicate line
 vim.keymap.set('n', '<leader>d', 'yyp')
 
@@ -44,3 +47,6 @@ vim.keymap.set('n', '<leader>sr', ':so %<cr>')
 --move blocks of code highlighted in visual mode
 vim.keymap.set('v', 'J', ":m '>+1<cr>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<cr>gv=gv")
+--
+--resource lua modules for testing purposes
+vim.keymap.set('n', '<leader><leader>w', 'lua R(%)')

@@ -1,6 +1,35 @@
 #!/usr/bin/env bash
 #credit to thePrimeagen
 
+getopts ":a" opt;
+tmux_config="/home/eeby/.tmux.conf"
+p=$(pwd)
+
+if [[ $opt -eq "a" ]]; then
+    if [[ $# -eq 1 ]]; then
+        echo "Usage: tmuxSessionizer -a [prefix key]"
+        exit 0
+    fi
+
+    cmd='bind-key -r '
+    cmd+="$2"
+    cmd+=' run-shell "~/dotfiles_linux/scripts/tmux-sessionizer '
+    cmd+=${p}
+    cmd+="/"
+    cmd+='"'
+    echo ${cmd}
+    
+
+    if grep -Fxq "$cmd" "$tmux_config"; then
+        echo "Binding already in config"
+    else
+        echo "creating binding"
+        echo ${cmd} >> ${tmux_config}
+    fi
+    
+    exit 0
+fi
+
 if [[ $# -eq 1 ]]; then
     selected=$1
 else

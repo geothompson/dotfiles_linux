@@ -9,30 +9,28 @@
 --    :Lazy update
 --
 require('lazy').setup({
-  --
   -- Use `opts = {}` to force a plugin to be loaded.
-  --
   --  This is equivalent to:
   --    require('Comment').setup({})
-
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
-
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
   require 'geothompson/plugins/gitsigns',
+
 
   require 'geothompson/plugins/which-key',
 
   require 'geothompson/plugins/telescope',
 
   require 'geothompson/plugins/lspconfig',
+  require 'geothompson/plugins/vimjotter',
 
-  require 'geothompson/plugins/autopairs',
+  -- require 'geothompson/plugins/autopairs',
 
 
-  -- require 'geothompson/plugins/conform',
+  require 'geothompson/plugins/conform',
 
   require 'geothompson/plugins/cmp',
 
@@ -62,11 +60,21 @@ require('lazy').setup({
   {
     'catppuccin/nvim',
     name = 'catppuccin',
+    -- priority = 1000,
+    -- config = function()
+    --   vim.cmd.colorscheme 'catppuccin-macchiato'
+    -- end,
+  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      vim.cmd.colorscheme 'rose-pine-moon'
     end,
+
   },
+
 
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 }, {

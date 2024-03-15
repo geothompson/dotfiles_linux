@@ -4,13 +4,13 @@ return {
   opts = { use_diagnostic_signs = true },
   -- stylua: ignore
   keys = {
-    { "<leader>t;", "<cmd>TroubleToggle<cr>",                       desc = " Toggle Trouble" },
+    { "<leader>t;",  "<cmd>TroubleToggle<cr>",                       desc = " Toggle Trouble" },
     { "<leader>tdb", "<cmd>TroubleToggle document_diagnostics<cr>",  desc = "Document Diagnostics (Trouble)" },
     { "<leader>tdw", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "Workspace Diagnostics (Trouble)" },
-    { "<leader>tl", "<cmd>TroubleToggle loclist<cr>",               desc = "Location List (Trouble)" },
-    { "<leader>tq", "<cmd>TroubleToggle quickfix<cr>",              desc = "Quickfix List (Trouble)" },
-    { "<leader>tr", "<cmd>TroubleToggle lsp_references<cr>",        desc = "Lsp reference (Trouble)" },
-    { "<leader>te", "<cmd>TroubleToggle telescope<cr>",             desc = "Trouble Telescope(Trouble)" },
+    { "<leader>tl",  "<cmd>TroubleToggle loclist<cr>",               desc = "Location List (Trouble)" },
+    { "<leader>tq",  "<cmd>TroubleToggle quickfix<cr>",              desc = "Quickfix List (Trouble)" },
+    { "<leader>tr",  "<cmd>TroubleToggle lsp_references<cr>",        desc = "Lsp reference (Trouble)" },
+    { "<leader>te",  "<cmd>TroubleToggle telescope<cr>",             desc = "Trouble Telescope(Trouble)" },
     {
       "[q",
       function()
@@ -40,5 +40,5 @@ return {
       desc = "Next trouble/quickfix item",
     },
   },
-  dependencies = { "kyazdani42/nvim-web-devicons" },
+  dependencies = { "nvim-tree/nvim-web-devicons", },
 }
