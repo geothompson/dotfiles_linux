@@ -64,6 +64,7 @@ shopt -s globstar
 shopt -s dotglob
 
 export PATH=/usr/bin/lynx:$PATH
+export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH=$HOME/dotfiles_linux/scripts/:$PATH

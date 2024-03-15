@@ -24,6 +24,5 @@ ls -l $HOME/.bash_aliases
 ln -sf $PWD/gdbinit ~/.gdbinit
 ls -l ~/.gdbinit
 
-ln -s $PWD/nvim ~/.config/
 ls -l ~/.gdbinit
 
