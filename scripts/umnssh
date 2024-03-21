@@ -13,7 +13,7 @@ else
                             ;;
        -lo | --login)       machine="login$2"
                             ;;
-       -k | --keller)       machine="csel-kh1250-$2"
+       -k | --keller)       machine="csel-kh1260-$2"
                             ;;
        -at | --atlas)       machine="csel-atlas"
                             ;;
