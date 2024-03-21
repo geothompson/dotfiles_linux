@@ -44,13 +44,15 @@ require('lazy').setup({
 
   require 'geothompson/plugins/harpoon',
 
-  require 'geothompson/plugins/debug',
+  -- require 'geothompson/plugins/debug',
 
   require 'geothompson.plugins/indent_line',
 
   require 'geothompson/plugins.melange-nvim',
 
   require 'geothompson/plugins.trouble',
+  require 'geothompson/plugins.copilot',
+
 
   require("geothompson.plugins.fugitive"),
   {
